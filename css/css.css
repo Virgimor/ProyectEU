@@ -52,20 +52,7 @@
 li a:hover {
   background-color: #111;
 }
-body {
-background-image: url(/img/Flag-European-Union.jpg);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: 100% ;
-}
-.noticia{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 30%;
-    background-color: beige;
-}
+
   @media screen and (min-width:1800px){
     .dropdown {
       display: none;
@@ -121,3 +108,38 @@ background-size: 100% ;
     }
     
   }
+
+body {
+  background-image: url(/img/Flag-European-Union.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% ;
+}
+.noticia{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: 35%; 
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.texto{
+  width: 50%;
+  margin-right: 10%;
+  height: 35%; 
+  justify-content: center;
+}
+/*Tamaño de las imagenes*/
+.img{
+  width: 50%;
+  margin-left: 10%;
+}
+/*Posicionamento de las imagenes de las noticias*/
+.imgNoticias{
+  width: 90%;
+  height: 90%;
+  margin-left: 90%;
+  margin-top: -17%;
+  border-radius: 5%;
+}
