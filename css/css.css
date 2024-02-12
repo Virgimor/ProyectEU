@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 99%;
     max-width: 100%;
     max-height: 100%;
   }
@@ -13,7 +14,7 @@
   }
 /* Centra la barra y la vuelve azul*/
 .navegador {
-    overflow: hidden;
+    
     background-color: blue;
     margin-right: 25%;
     margin-left: 25%;
@@ -54,6 +55,9 @@ li a:hover {
 }
 
   @media screen and (min-width:1800px){
+    .navegador{
+      overflow: hidden;
+    }
     .dropdown {
       display: none;
     }
@@ -64,15 +68,16 @@ li a:hover {
     /*Menu desplegable*/
     .dropdown {
       position: relative;
-      display: block;
+      display: inline-block;
       width: 100%;
+      background-color: blue;
     }
     
     .dropbtn {
-      background-color: #4CAF50;
+      background-color: rgba(255, 255, 0, 0.818);
       color: white;
-      padding: 16px;
-      font-size: 16px;
+      padding: 2%;
+      font-size: 80%;
       border: none;
       cursor: pointer;
       display: block;
@@ -80,35 +85,33 @@ li a:hover {
     }
     
     .dropdown-content {
-      display: block;
-      position: relative;
+      display: none;
+      position: absolute;
+      left: 0;
       background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      min-width: 50%;
+      min-height: 125%;
+      box-shadow: 0px 1% 2% 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
     
     .dropdown-content a {
       color: black;
-      padding: 12px 16px;
+      padding: 5% 7%;
       text-decoration: none;
-      display: block;
+      display:block;
+      
     }
     
-    .dropbtn:hover.dropdown-content {
+    .dropdown:hover .dropdown-content {
       display: block;
     }
-    .navegador a, .navegador input[type=text] {
-      float: none;
+    section {  
       display: none;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
     }
     
   }
-
+/*Fondo de pantalla*/
 body {
   background-image: url(/img/Flag-European-Union.jpg);
   background-repeat: no-repeat;
@@ -121,7 +124,7 @@ body {
   margin-right: auto;
   width: 55%;
   height: 35%; 
-  border-radius: 15px;
+  border-radius: 3%;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .texto{
