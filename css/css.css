@@ -28,6 +28,7 @@
     padding: 2% 2%;
     text-decoration: none;
     font-size: 100%;
+    cursor:pointer;
   }
   
   /* Color de los enlances al pasar por encima */
@@ -45,37 +46,78 @@
     margin-right: 2%;
     font-size: 100%;
   }
+
+    
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+body {
+background-image: url(/img/Flag-European-Union.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% ;
+}
+.noticia{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 30%;
+    background-color: beige;
+}
+  @media screen and (min-width:1800px){
+    .dropdown {
+      display: none;
+    }
+  }
   
-  /* Cuando la pantalla sea menos ancha que 600px , pone los enlaces en vertical */
+  /* Cuando la pantalla sea menos ancha que 1800px , pone los enlaces en vertical */
   @media screen and (max-width: 1800px) {
+    /*Menu desplegable*/
+    .dropdown {
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+    
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      display: block;
+      width: 20%;
+    }
+    
+    .dropdown-content {
+      display: block;
+      position: relative;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropbtn:hover.dropdown-content {
+      display: block;
+    }
     .navegador a, .navegador input[type=text] {
       float: none;
-      display: block;
+      display: none;
       text-align: left;
       width: 100%;
       margin: 0;
       padding: 14px;
     }
-    .navegador input[type=text] {
-      border: 1px solid #ccc;
-    }
-  }
     
-    /* Change the link color to #111 (black) on hover */
-    li a:hover {
-      background-color: #111;
-    }
-body {
-    background-image: url(/img/Flag-European-Union.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% ;
-}
-    .noticia{
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        height: 30%;
-        background-color: beige;
-    }
+  }
