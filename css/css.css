@@ -1,23 +1,28 @@
+@font-face {
+  font-family: "Open Sans";
+  src:local(OpenSans-VariableFont_wdth),
+  url(res/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 12px;
-    font-size: 1.0vw;
     max-width: 100%;
     max-height: 100%;
-  }
+    font-family: 'Open Sans';
+
+  } 
   header img {
-    border: 3px solid;
+    
     float: left;
 
-  width: 26%;
+  width: 29%;
   }
 /* Centra la barra y la vuelve azul*/
 .navegador {
-    
-    background-color: blue;
-    
+    background-color: rgb(4, 4, 133);
+    font-size: 12px;
+    font-size: 1.1vw;
   }
   
   /* Estilo de los enlaces dentro de la barra */
@@ -26,7 +31,7 @@
     display: inline-flex;
     color: white;
     text-align: center;
-    padding: 2% 2%;
+    padding: 2% 1.6%;
     text-decoration: none;
     font-size: 100%;
     cursor:pointer;
@@ -64,67 +69,11 @@ li a:hover {
     }
   }
   
-  /* Cuando la pantalla sea menos ancha que 1800px , pone los enlaces en vertical */
-  @media screen and (max-width: 1800px) {
-    /*Menu desplegable*/
-    .navegador{
-      display: inline-flex;
-    }
-    header img {
-    width: 22%;
-    }
-    .navegador input[type=text] {
-      margin-top: 14px;
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      background-color: blue;
-    }
-    
-    .dropbtn {
-      background-color: rgba(255, 255, 0, 0.818);
-      color: white;
-      padding: 2%;
-      font-size: 80%;
-      border: none;
-      cursor: pointer;
-      display: block;
-      width: 20%;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      left: 0;
-      
-      min-width: 50%;
-      min-height: 125%;
-      box-shadow: 0px 1% 2% 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      color: black;
-      background-color: #f9f9f9;
-      padding: 5% 7%;
-      text-decoration: none;
-      display:block;
-      
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    section {  
-      display: none;
-    }
-    
-  }
+ 
 /*Fondo de pantalla*/
 body {
   position: absolute;
+  height: auto;
 }
 .noticia{
   margin-left: auto;
@@ -135,6 +84,8 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   display:flex;
   box-shadow: 0 0 3px -1px;
+  font-size: 12px;
+  font-size: 1.3vw;
   
 }
 .texto{
@@ -146,12 +97,12 @@ body {
   font-size: auto;
   display: flexbox;
 }
-/*Tamaño de las imagenes*/
+/*Tamaño de la caja de las imagenes*/
 .div-img{
-  width: 60vw;
+  width: 50vw;
   height: 100vw;
 }
-/*Posicionamento de las imagenes de las noticias*/
+/*Posicionamento y tamaño de las imagenes de las noticias*/
 .tamaño-img{
   width: 100vw;
   height: 100vw;
@@ -176,7 +127,82 @@ footer{
   display: flex;
   justify-content: center;
 }
-.enlace{
-  margin-left: 32vw;
-  margin-top: 9vw;
+li{
+  list-style-type: circle;
+  margin-left: 1.5vw;
+  margin-top: 0.3vw;
+}
+
+ /* Cuando la pantalla sea menos ancha que 1800px , pone los enlaces en vertical */
+ @media screen and (max-width: 1800px) {
+  /*Menu desplegable*/
+  *{
+    font-size: 3vw;
+    
+  }
+  .navegador{
+    display: inline-flex;
+  }
+  header img {
+  width: 22%;
+  }
+  .navegador input[type=text] {
+    margin-top: 8px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: blue;
+  }
+  
+  .dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    font-size: 80%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    
+    min-width: 50%;
+    min-height: 125%;
+    box-shadow: 0px 1% 2% 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    background-color: #f9f9f9;
+    padding: 5% 7%;
+    text-decoration: none;
+    display:block;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  section {  
+    display: none;
+  }
+  body {
+    height: auto;
+    max-height: 500%;
+  }
+  .noticia {
+    height: 50vw;
+    width: 98vw;
+    overflow: auto;
+    
+  }
+
+  
 }
