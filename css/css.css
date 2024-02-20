@@ -10,13 +10,10 @@
     max-width: 100%;
     max-height: 100%;
     font-family: 'Open Sans';
-
   } 
   header img {
-    
     float: left;
-
-  width: 29%;
+    width: 29%;
   }
 /* Centra la barra y la vuelve azul*/
 .navegador {
@@ -27,7 +24,6 @@
   
   /* Estilo de los enlaces dentro de la barra */
   .navegador a {
-    
     display: inline-flex;
     color: white;
     text-align: center;
@@ -79,7 +75,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80vw;
-  height: 20vw; 
+  height: 25vw; 
   border-radius: 1vw;
   background-color: rgba(255, 255, 255, 0.6);
   display:flex;
@@ -92,10 +88,13 @@ body {
   width: 60vw;
   height: 100vw;
   margin-left: 2vw;
-  margin-right: 1vw;
-  margin-top: 1vw;
+  margin-right: 2vw;
+  margin-top: 1.2vw;
   font-size: auto;
   display: flexbox;
+}
+.parrafo{
+  margin-top: 0.5vw;
 }
 /*Tamaño de la caja de las imagenes*/
 .div-img{
@@ -124,14 +123,19 @@ footer{
   box-shadow: 0 0 3px -1px;
 }
 .indice{
-  display: flex;
-  justify-content: center;
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  margin-top: 20vw;
+  font-size: 1vw;
+  display: contents;
+  align-content: center;
 }
 li{
   list-style-type: circle;
   margin-left: 1.5vw;
   margin-top: 0.3vw;
 }
+
 
  /* Cuando la pantalla sea menos ancha que 1800px , pone los enlaces en vertical */
  @media screen and (max-width: 1800px) {
@@ -153,25 +157,25 @@ li{
     position: relative;
     display: inline-block;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(4, 4, 133);
   }
   
   .dropbtn {
-    background-color: blue;
+    background-color: rgb(4, 4, 133);
     color: white;
     padding: 2%;
     font-size: 80%;
     border: none;
     cursor: pointer;
-    display: block;
-    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    left: 0;
-    
+    left: 50%;
     min-width: 50%;
     min-height: 125%;
     box-shadow: 0px 1% 2% 0px rgba(0,0,0,0.2);
@@ -199,7 +203,7 @@ li{
   }
   .noticia {
     height: 50vw;
-    width: 98vw;
+    width: 88vw;
     overflow: auto;
     
   }
