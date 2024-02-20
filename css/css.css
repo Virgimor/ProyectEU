@@ -73,6 +73,9 @@ li a:hover {
     header img {
     width: 22%;
     }
+    .navegador input[type=text] {
+      margin-top: 14px;
+    }
     .dropdown {
       position: relative;
       display: inline-block;
