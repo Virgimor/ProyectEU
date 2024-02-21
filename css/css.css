@@ -164,7 +164,7 @@ input::placeholder{
   }
   header img {
     width: 49vw;
-    height: 11.1vw;
+    height: 11.2vw;
   }
   .navegador input[type=text] {
     margin-top: 11px;
@@ -210,7 +210,7 @@ input::placeholder{
     justify-content: center;
   }
   .material-icons{
-    width: 8vw;
+    width: 6vw;
     padding-top: 0.2vw;
   }
   
@@ -226,7 +226,7 @@ input::placeholder{
   }
   .noticia {
     height: 115vw;
-    width: 85vw;
+    width: 75vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2vw;
@@ -234,8 +234,8 @@ input::placeholder{
     flex-direction: column-reverse ;
   }
   .texto{
-    width: 60vw;
     height: 135vw;
+    width: 68vw;
     margin-left: 4vw;
     margin-right: 2vw;
     margin-bottom: 5vw;
