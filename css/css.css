@@ -145,6 +145,7 @@ footer img {
   width: 10vw;
   height: 6vw;
   margin-top: 1vw;
+  margin-left: 5vw;
 }
 input::placeholder{
   padding: 10px;
@@ -207,7 +208,11 @@ input::placeholder{
     text-decoration: none;
     display:flex;
     justify-content: center;
-    
+  }
+  .material-icons{
+    width: 5vw;
+    font-size: 1vw;
+    size: 1px;
   }
   
   .dropdown:hover .dropdown-content {
