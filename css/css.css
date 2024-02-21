@@ -159,8 +159,8 @@ input::placeholder{
     display: inline-block;
   }
   header img {
-    width: 49.9%;
-    height: auto;
+    width: 49vw;
+    height: 10vw;
   }
   .navegador input[type=text] {
     margin-top: 11px;
