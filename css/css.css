@@ -14,7 +14,7 @@
   header img {
     float: left;
     width: 29%;
-    
+    height: 5.5vw
   }
 /* Centra la barra y la vuelve azul*/
 .navegador {
@@ -112,19 +112,21 @@ body {
   border-end-end-radius: 1vw;
 }
 
-.div{
+.div-body{
   width: 100vw;
   height: auto;
   background-color: rgb(239, 240, 240);
   box-shadow: 0 0 3px -1px;
 }
 .indice{
+  display: flex;
+  justify-content: center;
+}
+
+.indice a{
   text-decoration: none;
   color: rgb(63, 63, 63);
-  margin-top: 20vw;
-  font-size: 1vw;
-  display: contents;
-  align-content: center;
+  font-size: 1.5vw;
 }
 li{
   list-style-type: circle;
@@ -143,6 +145,7 @@ footer img {
   width: 10vw;
   height: 6vw;
   margin-top: 1vw;
+  margin-left: 5vw;
 }
 input::placeholder{
   padding: 10px;
@@ -160,13 +163,13 @@ input::placeholder{
     display: inline-block;
   }
   header img {
-  width: 49.9%;
-  height: auto;
+    width: 49vw;
+    height: 11.3vw;
   }
   .navegador input[type=text] {
-    margin-top: 8px;
-    margin-right: 3%;
-    float: right;
+    margin-top: 11px;
+    margin-left: 1.5%;
+    float: left;
   }
   .dropdown {
     position: absolute;
@@ -184,24 +187,31 @@ input::placeholder{
     cursor: pointer;
     width: 10%;
     float: left;
+    margin-top: 1vw;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    margin-top: 7.05vw;
-    min-width: 50%;
+    margin-top: 10.06vw;
+    margin-left: 60vw;
+    min-width: 40%;
     min-height: 125%;
     box-shadow: 0px 1% 2% 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: black;
-    background-color: #f9f9f9;
-    padding: 5% 7%;
+    color: white;
+    background-color: rgb(4, 4, 133);
+    padding: 5% 10%;
     text-decoration: none;
-    display:block;
+    display:flex;
+    justify-content: center;
+  }
+  .material-icons{
+    width: 6vw;
+    padding-top: 0.2vw;
   }
   
   .dropdown:hover .dropdown-content {
@@ -210,55 +220,67 @@ input::placeholder{
   section {  
     display: none;
   }
-  body {
+  body{
     height: auto;
     max-height: 1000%;
   }
   .noticia {
-    height: 95vw;
-    width: 68vw;
-    display: flex;
-    flex-direction: column-reverse ;
+    height: 115vw;
+    width: 75vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15vw;
-    
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column-reverse ;
   }
   .texto{
-    width: 60vw;
-    height: auto;
+    height: 135vw;
+    width: 68vw;
     margin-left: 4vw;
     margin-right: 2vw;
-    margin-bottom: 20vw;
+    margin-bottom: 5vw;
     font-size: auto;
     display: flexbox;
   }
+  li{
+    margin-left: 4vw;
+  }
   /*Tamaño de la caja de las imagenes*/
-.div-img{
-  width: 120vw;
-  height: 100vw;
-}
+  .div-img{
+    width: 120vw;
+    height: 100vw;
+  }
 /*Posicionamento y tamaño de las imagenes de las noticias*/
-.tamaño-img{
-  width: 110vw;
-  height: 40vw;
-  
-  border-start-start-radius: 1vw;
-}
+  .tamaño-img{
+    width: 110vw;
+    height: 40vw;
+    border-start-start-radius: 1vw;
+    border-end-end-radius: 0vw;
+  }
 
-.div{
-  margin-top: 10vw;
-  width: 100vw;
-  height: auto;
-  background-color: rgb(239, 240, 240);
-  box-shadow: 0 0 3px -1px;
-}
+  .div-body{
+    margin-top: 10vw;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(239, 240, 240);
+    box-shadow: 0 0 3px -1px;
+  }
   
   .parrafo{
     margin-top: 0.5vw;
   }
   input::placeholder{
     padding: 13px;
+  }
+  .indice{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .indice a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-size: 3vw;
   }
   
 }
