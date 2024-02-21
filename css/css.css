@@ -189,8 +189,9 @@ input::placeholder{
   .dropdown-content {
     display: none;
     position: absolute;
-    margin-top: 7.05vw;
-    min-width: 50%;
+    margin-top: 10.06vw;
+    margin-left: 60vw;
+    min-width: 40%;
     min-height: 125%;
     box-shadow: 0px 1% 2% 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -203,7 +204,7 @@ input::placeholder{
     text-decoration: none;
     display:flex;
     justify-content: center;
-    margin-left: 71vw;
+    
   }
   
   .dropdown:hover .dropdown-content {
