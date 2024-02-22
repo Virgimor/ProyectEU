@@ -21,8 +21,6 @@
     background-color: rgb(4, 4, 133);
     font-size: 12px;
     font-size: 1.1vw;
-    
-    
   }
   
   /* Estilo de los enlaces dentro de la barra */
@@ -139,7 +137,7 @@ li{
 footer{
   background-color: rgb(239, 240, 240);
   width: 100vw;
-  height: 12vw;
+  height: auto;
   box-shadow: 0 0 3px -1px;
 }
 
@@ -158,10 +156,11 @@ footer i{
   justify-content: space-around;
   align-items: center;
 }
+
 footer ul li{
   list-style: none !important;
   text-decoration: none !important;
-  font-size: 0.9vw;
+  font-size: 1.2vw;
   color: black;
   margin-right: 3vw;
 }
@@ -169,6 +168,9 @@ footer ul li{
   text-align: center;
   margin-top: 2vw;
   font-size: 1.3vw;
+}
+.iconos{
+  text-decoration: none !important;
   
 }
 
@@ -177,7 +179,6 @@ footer ul li{
   /*Menu desplegable*/
   *{
     font-size: 3vw;
-    
   }
   .navegador{
     display: inline-block;
@@ -296,7 +297,7 @@ footer ul li{
   footer{
     background-color: rgb(239, 240, 240);
     width: 100vw;
-    height: 30vw;
+    height: auto;
     box-shadow: 0 0 3px -1px;
   }
   
@@ -313,16 +314,13 @@ footer ul li{
     display: flex;
     flex-direction: column;
   }
-  footer ul li{
-    
-  }
   .hg_p{
     font-size: 3vw;
     margin-top: 4vw;
   }
   .iconos{
-    margin-top: 4vw;
+    margin-top: 19vw;
     margin-left: 4vw;
+    text-decoration: none;
   }
-  
 }
