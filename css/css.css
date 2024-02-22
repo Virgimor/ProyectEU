@@ -150,12 +150,12 @@ footer img {
   margin-left: 4vw;
 }
 footer i{
-  margin-right: 5vw;
+  margin-right: 1vw;
   font-size: 1.5vw;
 }
 .contenedorX{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 footer ul li{
@@ -163,12 +163,12 @@ footer ul li{
   text-decoration: none !important;
   font-size: 0.9vw;
   color: black;
-  margin-right: 5vw;
+  margin-right: 3vw;
 }
 .hg_p{
   text-align: center;
   margin-top: 2vw;
-  font-size: 0.9vw;
+  font-size: 1.3vw;
   
 }
 
@@ -298,7 +298,6 @@ footer ul li{
     width: 100vw;
     height: 30vw;
     box-shadow: 0 0 3px -1px;
-    
   }
   
   footer img {
